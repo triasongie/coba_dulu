@@ -1,0 +1,4 @@
+cd backend dulu trus jalanin :
+py -3 -m uvicorn main:app --reload --host 127.0.0.1 --port 8000(itu dilaptop aku/dikalian mungkin beda)
+buat front end nya :
+npm run dev
