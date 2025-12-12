@@ -10,11 +10,15 @@ app = FastAPI(
     description="Endpoint untuk menjalankan alur kerja penemuan molekul dengan LLM dan ML.",
     version="1.0.0"
 )
-
+origins = [
+    "http://localhost:5173",
+    "ttps://github.com/triasongie", 
+    "https://github.com/triasongie/coba_dulu"
+]
 # Konfigurasi CORS (Sudah Benar)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
